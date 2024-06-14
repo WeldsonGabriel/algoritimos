@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Número</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificação de Número</h1>
+
+        <div class="section">
+            <h2>Digite as notas</h2>
+            <input type="number" placeholder="Português" min="0" max="10" oninput="validarNota(this)">
+            <input type="number" placeholder="Matemática" min="0" max="10" oninput="validarNota(this)">
+            <input type="number" placeholder="Biológia" min="0" max="10" oninput="validarNota(this)">
+            <input type="number" placeholder="Quimica" min="0" max="10" oninput="validarNota(this)">
+            <input type="number" placeholder="Física" min="0" max="10" oninput="validarNota(this)">
+            <input type="number" placeholder="Historia" min="0" max="10" oninput="validarNota(this)">
+            <input type="number" placeholder="Geografia" min="0" max="10" oninput="validarNota(this)">
+            <button onclick="calcularMedia()">Calcular Média</button>
+            <div id="resultado" class="resultado"></div>
+            <p id="media"></p>
+        </div>
+    </div>
+
+    <script src="/5-media-nota/scripts/scripts.js"></script>
+</body>
+</html>
